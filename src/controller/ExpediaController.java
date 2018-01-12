@@ -11,13 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 import service.ExpediaService;
 
 @Controller
-@RequestMapping("/")
 public class ExpediaController {
 	
 	@Autowired
 	private ExpediaService expediaService;
 	
-	@RequestMapping({"/index", "/"})
+	@RequestMapping("/*")
 	public ModelAndView getOffers(@RequestParam HashMap<String,String> dataModel){
 		ModelAndView modelAndView = new ModelAndView("index");
 		HashMap<String,Object> response = expediaService.getOffers(dataModel);
