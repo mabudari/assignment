@@ -12,13 +12,13 @@
 			<resource>
 				<directory>src</directory>
 				<excludes>
-					<exclude>**/*.java</exclude>
+					<exclude>*/*.java</exclude>
 				</excludes>
 			</resource>
 			<resource>
 				<directory>WebContent/META-INF</directory>
 				<excludes>
-					<exclude>**/*.java</exclude>
+					<exclude>*/*.java</exclude>
 				</excludes>
 			</resource>
 		</resources>
@@ -50,7 +50,7 @@
                             <artifactItem>
                                 <groupId>com.github.jsimone</groupId>
                                 <artifactId>webapp-runner</artifactId>
-                                <version>8.5.23.0</version>
+                                <version>8.5.23.1</version>
                                 <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>

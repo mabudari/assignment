@@ -15,7 +15,7 @@
 	<import resource="expediaContext.xml" />
 	<context:component-scan base-package="controller" />
 	 <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
-      <property name = "prefix" value = "/WEB-INF/" />
+      <property name = "prefix" value = "" />
       <property name = "suffix" value = ".jsp" />
    </bean>
 
