@@ -11,5 +11,5 @@ on the view, the UI support one filter (destinationName) but you can try any one
 to set the project on you local machine just download the project as ZIP file, and import it as archive file on eclipse, then run it on tomcat servet.
 or you can use ubuntu terminal, 
 download project, extract it, change directory to be in the extracted folder,
-then run "mvn package"
 and then run "java -jar target/dependency/webapp-runner.jar target/Expedia-Hotels.war"
+I prefare to run "mvn clean" and "mvn package" first
