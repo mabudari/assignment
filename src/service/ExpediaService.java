@@ -26,7 +26,6 @@ public class ExpediaService{
 		HashMap<String,Object> response = new HashMap<String,Object>();
 		try{
 			URI uri = getURI(OFFERS_URL,dataModel);
-			System.out.println(uri.toASCIIString());
 			response = ApiExecute(uri.toASCIIString());
 		}catch(Exception e){
 			e.printStackTrace();

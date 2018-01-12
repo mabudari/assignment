@@ -20,7 +20,6 @@ public class ExpediaController {
 	@RequestMapping({"/index", "/"})
 	public ModelAndView getOffers(@RequestParam HashMap<String,String> dataModel){
 		ModelAndView modelAndView = new ModelAndView("index");
-		System.out.println("controller");
 		HashMap<String,Object> response = expediaService.getOffers(dataModel);
 		modelAndView.addObject("hotels", response.get("hotel"));
 		return modelAndView;
